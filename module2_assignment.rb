@@ -13,6 +13,12 @@ class LineAnalyzer
   #* initialize() - taking a line of text (content) and a line number
   #* calculate_word_frequency() - calculates result
 
+  def initialize(content, line)
+    @content = content 
+    @line_number  = line 
+    calculate_word_frequency()
+  end
+
   #Implement the initialize() method to:
   #* take in a line of text and line number
   #* initialize the content and line_number attributes
